@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='files/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='files/css/home.css')}}">
+</head>
+<body>
+    <div class="container" style="margin-top: 50px;">
+        <h1 class= "text-primary" id="head">DETAILS</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th>NAME:</th>
+                <td>{{name}}</td>
+            </tr>
+            <tr>
+                <th>AGE:</th>
+                <td>{{ age }}</td>
+            </tr>
+            <tr>
+                <th>ADDRESS</th>
+                <td>{{ address }}</td>
+            </tr>
+            <tr>
+                <th>CONTACT</th>
+                <td>{{ contact }}</td>
+            </tr>
+            <tr>
+                <th>MAIL</th>
+                <td>{{ mail }}</td>
+            </tr>
+        </table>
+        <form action="\" >
+            <input type="submit" value="Return to home page">
+        </form>
+    </div>
+    
+
+</body>
+</html>
